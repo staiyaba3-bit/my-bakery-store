@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fffaf3;
+    color: #4b2e2e;
+}
+
+/* NAVBAR */
+header {
+    background: #A0522D;
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    padding: 120px 5%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(180deg, rgba(160, 81, 45, 0.3), rgba(160, 81, 45, 0.7)), url('image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.hero h2 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.hero p {
+    
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.btn {
+    background: #A0522D;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #8B4513;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 50px 5%;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    transition:all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.card-body h4{
+    margin-bottom: 5px;
+}
+
+
+.card-body p{
+    margin-bottom: 8px;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-body button {
+    background: #A0522D;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ;
+}
+
+.card-body button:hover{
+    background: #8B4513;
+    transform:scale(1.05);
+}
+
+/* ABOUT */
+.about {
+    padding: 50px 5%;
+    background: #f3e5d8;
+    text-align: center;
+}
+
+/* CONTACT */
+.contact {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.products h2, .about h2, .contact h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #5a3e2b;
+}
+
+/* FOOTER */
+footer {
+    background: #5a3e2b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* QUANTITY SYSTEM */
+.quantity-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.quantity-box button {
+    background: #A0522D;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.qty {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#viewCartBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #A0522D;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    margin: 100px auto;
+    border-radius: 10px;
+    text-align: center;
+}
