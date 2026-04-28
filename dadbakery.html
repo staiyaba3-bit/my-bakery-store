@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bakery Store</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="dadbakery.css">
+
+
+</head>
+
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-circle"></div>
+        <p class="loader-text">BAKING...</p>
+    </div>
+
+    <!-- NAVBAR -->
+    <header id="main-header">
+        <h1>My Bakery Store</h1>
+        
+        <!-- Hamburger Menu Button (Mobile Only) -->
+        <div class="menu-btn" id="menuBtn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav id="navMenu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#products" class="nav-link">Products</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+        <h2>Fresh Wholesale Bakery Products</h2>
+        <p>We supply fresh cookies, cakes, and Toast in bulk for shops .</p>
+        <a href="#" class="btn">Order on WhatsApp</a>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products" id="products">
+        <h1>Our Products</h1>
+
+        <!-- Live Search Input -->
+        <div style="text-align: center; margin-bottom: 30px;">
+            <input type="text" id="searchInput" placeholder="Search for bakery products..." style="width: 90%; max-width: 400px; padding: 12px 15px; border-radius: 8px; border: 1px solid #ddd; font-family: 'Poppins', sans-serif; font-size: 1rem; outline: none; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
+        </div>
+
+        <div class="product-grid">
+
+            <!-- Repeat this card -->
+            <!-- Product 1 -->
+            <div class="card" data-unit="Gatta">
+                <img src="images/millet.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Millet Toast</h4>
+                    <p>₹745</p>
+                    <p> 1 gatta (12 pcs)</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Copy & paste to make 12 -->
+            <!-- (Same cards as before) -->
+
+            <div class="card" data-unit="Gatta">
+                <img src="images/khari.jpeg" class="cover">
+                <div class="card-body">
+                    <h4>Khari</h4>
+                    <p>₹675</p>
+                    <p>1 gatta (24pcs )</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-unit="Jhaal">
+                <img src="images/butter.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Maska Butter</h4>
+                    <p>₹550</p>
+                    <p> 1 jhaal (25 pcs)</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-unit="Packet">
+                <img src="images/cake 5rs.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Star Cake</h4>
+                    <p>₹65 /packet</p>
+                    <p>650 rs gatta (10 pcs)</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-unit="Jar">
+
+                <img src="images/cake 10 rs.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Cake jar</h4>
+                    <p>₹120/jar</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-unit="Jar">
+                <img src="images/osmaniaa.jpeg">
+                <div class="card-body">
+                    <h4>osmania cookies</h4>
+                    <p>₹170</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/nankhatai.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Nankhatai Cookies</h4>
+                    <p>₹170</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/fruit.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Fruit Cookies</h4>
+                    <p>₹170</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/coconut.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Coconut Cookies</h4>
+                    <p>₹170</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/chocolate.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Chocolate Cookies</h4>
+                    <p>₹170</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/zeera.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Zeera Cookies</h4>
+                    <p>₹140</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/pineapple.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Pineapple Cookies</h4>
+                    <p>₹170</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/ajwain.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Ajwain Cookies</h4>
+                    <p>₹170</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-unit="Jar">
+                <img src="images/khaja.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4> Star Khaja</h4>
+                    <p>₹160</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-unit="Packet">
+                <img src="images/chikki.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Rohit Chikki</h4>
+                    <p>₹80</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="card" data-unit="Packet">
+                <img src="images/creamroll.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Cream Roll</h4>
+                    <p>₹50</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" data-unit="Jar">
+                <img src="images/rohit jar1.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Rohit Jar Biscuit</h4>
+                    <p>₹120</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+
+                    <button class="add-to-cart">Add to Cart</button>
+
+                </div>
+            </div>
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/rohit2.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Rohit Jar Biscuit</h4>
+                    <p>₹120</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/rohit3.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Rohit Jar Biscuit</h4>
+                    <p>₹120</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/rohit4.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Rohit Jar Biscuit</h4>
+                    <p>₹120</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/rohit5.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Rohit Jar Biscuit</h4>
+                    <p>₹120</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/rohit 7.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Rohit Jar Biscuit</h4>
+                    <p>₹120</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/rohit6.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Rohit Jar Biscuit</h4>
+                    <p>₹120</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+            <div class="card" data-unit="Jar">
+                <img src="images/rohit fine jar.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Rohit fine jar</h4>
+                    <p>₹160</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+            <div class="card" data-unit="Gatta">
+                <img src="images/toast 10rs.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Good Morning 10rs Toast</h4>
+                    <p>₹260</p>
+                    <p>260 rs gatta (30pcs)</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+            <div class="card" data-unit="Gatta">
+                <img src="images/20rs toast.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Good Morning 20rs Toast</h4>
+                    <p>₹410</p>
+                    <p>420 rs gatta (24pcs)</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+            <div class="card" data-unit="Patta">
+                <img src="images/namkeen.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Namkeen</h4>
+                    <p>₹50</p>
+                    <p>50 rs patta (12 pcs)</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+            <div class="card" data-unit="box">
+                <img src="images/purest fry.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Purest Fry Masala</h4>
+                    <p>₹33</p>
+                    <p>MRP- 40</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="card" data-unit="box">
+                <img src="images/biryani.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Mehran Biryani Masala</h4>
+                    <p>₹80</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card" data-unit="box">
+                <img src="images/bombay.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Bombay Biryani Masala</h4>
+                    <p>₹80</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+            <div class="card" data-unit="box">
+                <img src="images/hyderabadi.jpeg" alt="Product">
+                <div class="card-body">
+                    <h4>Hyderabadi Biryani Masala</h4>
+                    <p>₹80</p>
+                    <div class="quantity-box">
+                        <button class="minus">-</button>
+                        <span class="qty">1</span>
+                        <button class="plus">+</button>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are a family-owned wholesale bakery dedicated to delivering fresh and high-quality baked goods in bulk.
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>📞 Phone: +91 7905520249 </p>
+        <p>📍 Address: Patel Nagar (bhool bhulaiya) near government hospital barhaj (deoria)</p>
+        <p>💬 WhatsApp: Available for orders</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 My Bakery Store. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <button id="viewCartBtn">🛒 View Cart</button>
+
+    <div id="cartPopup" class="popup">
+        <div class="popup-content">
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <button id="sendWhatsApp">Order on WhatsApp</button>
+            <button id="closeCart">Close</button>
+        </div>
+    </div>
+</body>
+
+</html>
